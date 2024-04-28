@@ -1,0 +1,112 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+html, body {
+/* <uniquifier>: Use a unique and descriptive class name
+   <weight>: Use a value from 100 to 900 */
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+/* ====================== header ========================= */
+.container-h {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+.top-banner img {
+  border-radius: 15px;
+  width: 90%;
+}
+.navi {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.gnb {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.2rem;
+}
+.gnb>li { 
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+} 
+.gnb>li:nth-child(2) { width: 150px;}
+.gnb>li:nth-child(3) { width: 110px;}
+.gnb>li:nth-child(4) { width: 110px;}
+.gnb>li:nth-child(5) { width: 110px;}
+.gnb>li:nth-child(6) { width: 110px;}
+
+.gnb>li:hover .lnb {
+  opacity: 1;
+  z-index: 5;
+}
+.lnb {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  opacity: 0;
+  z-index: -5;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.lnb>li {
+  background-color: #d5ab94;
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+.user {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.user-menu {
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 14px;
+  text-align: center;
+}
+.login {
+  margin-left: 1.3rem;
+  font-size: 14px;
+  background-color: rgb(114, 114, 114);
+  border-radius: 10px;
+  width: 65px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+}
+/* .gnb>li:hover .lnb { } ==> gnb의 li에 hover를 걸어야 한다.*/
+/* lnb에 z-index의 값을 지정해 주어야 한다. */
+/* a태그는 상속이 안된다??? font-size, gap은 상속이 되는데... */
+
+
+
+/* ====================== banner ======================= */
+.banner {
+  margin-top: 0.8rem;
+}
+.banner-img>img {
+  width: 100%;
+  height: 89vh;
+}
+
+
+
+/* ====================== main ======================= */
