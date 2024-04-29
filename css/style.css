@@ -109,4 +109,173 @@ html, body {
 
 
 
-/* ====================== main ======================= */
+/* ==================== main>content01 =================== */
+.content01 {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+}
+.left01 {
+  width: 40%;
+  background-color: #2b3b59;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding-left: 4rem;
+  position: relative;
+} 
+.left01>img {
+  width: 230px;
+  height: 253px;
+  position: absolute;
+  right: 3rem;
+  bottom:2.5rem;
+}
+.left01>p:nth-child(1) {
+  font-size: 30px;
+  font-weight: bold;
+}
+.left01>p:nth-child(2) {
+  color: #B1B1B1;
+}
+.left01>p:nth-child(3) {
+  color: #B1B1B1;
+}
+.left01>p:nth-child(4) {
+  background-color: white;
+  color: #2b3b59;
+  font-size: 18px;
+  width: 150px;
+  height: 35px;
+  line-height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.right01 {
+  width: 60%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.box01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box01>p:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+}
+.box01>img {
+  position: relative;
+  left: 0.5rem;
+  padding: 0.5rem;
+}
+/* 아이디 선택자는 주로 어디에 사용하나??? */
+/* background속성 복습*/
+/* gap속성이란??? */
+/* 이미지 사이즈 크기 조절 다시 복습 */
+/* 이미지의 위치를 옮기려면 display: absolute를 이용하면 쉽다. */
+
+
+
+/* =================== main>content02 ==================== */
+.content02 {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 5rem;
+  background-color: rgb(236, 236, 236);
+}
+.left02>img {
+  width: 650px;
+  height: 320px;
+}
+.text02 {
+  position: relative;
+  left: 25rem;
+  bottom: 9.7rem;
+  background-color: #e84040;
+  color: white;
+  width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  border-top-left-radius: 30px;
+}
+.text02 p {
+  margin-left: 3rem;
+}
+.text02>p:nth-child(1) {
+  font-size: 25px;
+  font-weight: bold;
+}
+.text02>p:nth-child(4) {
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgba(6, 6, 6, 0.7);
+  color: white;
+}
+.right02>iframe {
+  width: 650px;
+  height: 320px;
+}
+
+
+
+/* =================== main>content03 ==================== */
+.content03 {
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem 5rem;
+}
+.left03 {
+  margin-top: 1rem;
+}
+.left03>p:nth-child(1) {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.left03>p:nth-child(4) {
+  font-size: 18px;
+  background-color:#e84040;
+  width: 150px;
+  height: 35px;
+  line-height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+
+.box03 {
+  width: 700px;
+  height: 25px;
+  /* width:31%; */
+  margin-right: 2rem;
+  border-bottom: 3px solid #eee; 
+  margin: 2rem 0;
+}
+.box03>a {
+  display: flex;
+  justify-content: space-between;
+}
+.box03 p:nth-of-type(2) {
+  font-size: 14px;
+}
+
+/* overflow: hidden; 속성이란? */
+
+
+
