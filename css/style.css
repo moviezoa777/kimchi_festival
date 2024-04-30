@@ -274,8 +274,86 @@ html, body {
 .box03 p:nth-of-type(2) {
   font-size: 14px;
 }
-
 /* overflow: hidden; 속성이란? */
 
+
+
+/* ================= main>content04 ================ */
+.box04>img {
+  width: 100%;
+  height: 350px;
+}
+
+
+
+/* =================== footer ==================== */
+.f-top {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeded;
+  height: 60px;
+}
+.top-left {
+  display: flex;
+  justify-content: flex-start;
+  height: 40px;
+  margin-left: 6rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.top-left>p {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+}
+.top-left>img {
+ height: 40px;
+ margin-right: 2rem;
+}
+.top-right {
+  margin-right: 6rem;
+  margin-bottom: 10px;
+
+}
+.family-site>a {
+  display: block;
+  height: 50px;
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #c6c6c6;
+ 
+}
+.family-navi {
+  display: none;
+}
+.f-bottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeded;
+  
+
+}
+.f-bottom p {
+  font-size: 14px;
+}
+.bottom-left {
+  margin-left: 6rem;
+  margin-top: 0.5rem;
+}
+.bottom-left>ul {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.3rem;
+}
+.bottom-left li {
+  margin-right: 0.5rem;
+  font-size: 14px;
+}
+.bottom-right {
+  margin-right: 6rem;
+  margin-top: 2rem;
+}
 
 
