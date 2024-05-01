@@ -32,22 +32,26 @@ html, body {
   margin-top: 0.2rem;
 }
 .gnb>li { 
-  width: 160px;
+  width: 140px;
   height: 35px;
   line-height: 35px;
   text-align: center;
   font-size: 18px;
   position: relative;
 } 
-.gnb>li:nth-child(2) { width: 150px;}
-.gnb>li:nth-child(3) { width: 110px;}
-.gnb>li:nth-child(4) { width: 110px;}
-.gnb>li:nth-child(5) { width: 110px;}
-.gnb>li:nth-child(6) { width: 110px;}
-
-.gnb>li:hover .lnb {
+.gnb>li:hover .lnb{
   opacity: 1;
   z-index: 5;
+}
+.gnb>li:nth-child(3) li {
+  padding: 0.5rem 0;
+  text-align: center;
+  height: 70px;
+  line-height: 35px;
+}
+.gnb>li:nth-child(3) li:nth-child(5) {
+  height: 105px;
+  line-height: 35px;
 }
 .lnb {
   position: absolute;
@@ -57,16 +61,23 @@ html, body {
   z-index: -5;
   transition-property: all;
   transition-duration: 0.5s;
-  transition-timing-function: linear;
 }
 .lnb>li {
-  background-color: #d5ab94;
+  background-color: #e8aa92;
   width: 150px;
   height: 35px;
   line-height: 35px;
   text-align: center;
   font-size: 18px;
   color: white;
+  padding: 0.3rem 0;
+}
+.lnb>li:hover {
+  background-color: rgb(159, 159, 159);
+}
+.line {
+  border: 0;
+  border-top: 2px solid rgb(232, 232, 232);
 }
 .user {
   display: flex;
@@ -95,18 +106,18 @@ html, body {
 /* .gnb>li:hover .lnb { } ==> gnb의 li에 hover를 걸어야 한다.*/
 /* lnb에 z-index의 값을 지정해 주어야 한다. */
 /* a태그는 상속이 안된다??? font-size, gap은 상속이 되는데... */
-
+/* cubic-bezier( )란??? */
 
 
 /* ====================== banner ======================= */
 .banner {
   margin-top: 0.8rem;
 }
-.banner-img>img {
+.banner img {
   width: 100%;
   height: 89vh;
+  display: block;
 }
-
 
 
 /* ==================== main>content01 =================== */
@@ -160,16 +171,16 @@ html, body {
   align-items: center;
   padding: 2rem;
 }
-.box01 {
+.box01>a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.box01>p:nth-child(2) {
+.box01>a>p:nth-child(2) {
   font-size: 18px;
   font-weight: bold;
 }
-.box01>img {
+.box01>a>img {
   position: relative;
   left: 0.5rem;
   padding: 0.5rem;
@@ -186,7 +197,7 @@ html, body {
 .content02 {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5rem;
+  padding: 5.5rem 4.5rem 0 4.5rem;
   background-color: rgb(236, 236, 236);
 }
 .left02>img {
@@ -231,7 +242,7 @@ html, body {
   width: 650px;
   height: 320px;
 }
-
+/* 이미지 주변의 공백 제거하는 방법 */
 
 
 /* =================== main>content03 ==================== */
@@ -258,24 +269,26 @@ html, body {
   margin-top: 2rem;
   color: white;
 }
-
 .box03 {
   width: 700px;
   height: 25px;
-  /* width:31%; */
+  line-height: 25px;
   margin-right: 2rem;
   border-bottom: 3px solid #eee; 
   margin: 2rem 0;
+  font-size: 18px;
 }
 .box03>a {
   display: flex;
   justify-content: space-between;
 }
+.box03 p:nth-of-type(1) {
+ line-height: 20px;
+}
 .box03 p:nth-of-type(2) {
-  font-size: 14px;
+ font-size: 14px;
 }
 /* overflow: hidden; 속성이란? */
-
 
 
 /* ================= main>content04 ================ */
@@ -283,7 +296,6 @@ html, body {
   width: 100%;
   height: 350px;
 }
-
 
 
 /* =================== footer ==================== */
@@ -301,7 +313,6 @@ html, body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 .top-left>p {
   font-size: 16px;
   height: 40px;
@@ -314,26 +325,42 @@ html, body {
 .top-right {
   margin-right: 6rem;
   margin-bottom: 10px;
-
 }
-.family-site>a {
-  display: block;
+.family-site>button {
   height: 50px;
-  width: 150px;
+  width: 200px;
   line-height: 50px;
   text-align: center;
   background-color: #c6c6c6;
- 
+  border: 0; 
+  letter-spacing: 1.5px;
 }
 .family-navi {
+  height: 120px;
   display: none;
+  overflow: auto;
+}
+.family-navi>li {
+  position: relative;
+  z-index: 5;
+  height: 40px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #e7e7e7;
+  border-bottom: 2px dashed white;
+}
+.family-navi>li:hover {
+  background-color:forestgreen;
+  color: white;
+}
+.family-navi>li:nth-child(6) {
+  border: 0;
 }
 .f-bottom {
   display: flex;
   justify-content: space-between;
   background-color: #eeeded;
-  
-
 }
 .f-bottom p {
   font-size: 14px;
@@ -356,4 +383,5 @@ html, body {
   margin-top: 2rem;
 }
 
+/* .family-navi {height: 100px; display: none; overflow: auto;}  ==> 스크롤바 생성 */
 
