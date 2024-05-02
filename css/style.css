@@ -7,8 +7,7 @@ html, body {
   font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
-  font-style: normal;
-}
+  font-style: normal; }
 
 
 /* ====================== header ========================= */
@@ -101,12 +100,9 @@ html, body {
   height: 28px;
   line-height: 28px;
   text-align: center;
-  color: white;
-}
+  color: white; }
 /* .gnb>li:hover .lnb { } ==> gnb의 li에 hover를 걸어야 한다.*/
-/* lnb에 z-index의 값을 지정해 주어야 한다. */
-/* a태그는 상속이 안된다??? font-size, gap은 상속이 되는데... */
-/* cubic-bezier( )란??? */
+/* .lnb에 z-index의 값을 지정해 주어야 한다. */
 
 
 /* ====================== banner ======================= */
@@ -116,8 +112,7 @@ html, body {
 .banner img {
   width: 100%;
   height: 89vh;
-  display: block;
-}
+  display: block; }
 
 
 /* ==================== main>content01 =================== */
@@ -183,16 +178,18 @@ html, body {
 .box01>a>img {
   position: relative;
   left: 0.5rem;
-  padding: 0.5rem;
-}
-/* 아이디 선택자는 주로 어디에 사용하나??? */
-/* background속성 복습*/
-/* gap속성이란??? */
-/* 이미지 사이즈 크기 조절 다시 복습 */
+  padding: 0.5rem; }
 /* 이미지의 위치를 옮기려면 display: absolute를 이용하면 쉽다. */
+/* 아이디 선택자 ==> 1)문서의 레이아웃과 관련된 스타일을 지정할 때 사용
+                     2)요소에 자바스크립트를 사용하고자 할 때 요소를 구별하기 위해 사용 */
+/* 이미지의 크기 조절 ==>  width, height 속성을 사용하며 단위는 % 또는 px 를 사용한다. 
+                          ( %의 경우 웹브라우저창의 너비와 높이를 기준으로 한다.)  
+                      ==>  배경이미지는 background-size속성으로 크기를 조절한다. 
+                          (contain, cover, %, px 을 사용할 수 있는데 %의 경우 요소의 크기를 기준으로 한다. */
+/* gap속성 ==> 마진처럼 요소에 여백을 주기 위해 사용한다.   
+               (단, gap속성은 상하좌우에 인접한 요소가 있는 쪽에만 값이 지정이 된다.) */
 
-
-
+               
 /* =================== main>content02 ==================== */
 .content02 {
   display: flex;
@@ -240,9 +237,8 @@ html, body {
 }
 .right02>iframe {
   width: 650px;
-  height: 320px;
+  height: 320px; 
 }
-/* 이미지 주변의 공백 제거하는 방법 */
 
 
 /* =================== main>content03 ==================== */
@@ -288,7 +284,8 @@ html, body {
 .box03 p:nth-of-type(2) {
  font-size: 14px;
 }
-/* overflow: hidden; 속성이란? */
+/* overflow 속성 ==> 자식요소가 부모요소의 범위를 벗어날 때 자식요소를 제어하는 속성이다. 
+                     ( visible, hidden, auto, scroll 속성값을 사용할 수 있다.) */
 
 
 /* ================= main>content04 ================ */
@@ -383,5 +380,5 @@ html, body {
   margin-top: 2rem;
 }
 
-/* .family-navi {height: 100px; display: none; overflow: auto;}  ==> 스크롤바 생성 */
+
 
